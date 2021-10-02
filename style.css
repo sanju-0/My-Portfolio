@@ -45,8 +45,8 @@ body{
 }
 
 body.dark-theme{
-    --primary-bg-color:#252C48;
-    --secondary-bg-color:#171C32;
+    --primary-bg-color:#000000;
+    --secondary-bg-color:#242424;
     --primary-text-color:#fff;
     --secondary-text-color:#eee;
 }
@@ -261,11 +261,11 @@ section{
 }
 
 .about .row .box:nth-child(1) .progress:nth-child(3) .bar span{
-    width: 75%;
+    width: 55%;
 }
 
 .about .row .box:nth-child(1) .progress:nth-child(4) .bar span{
-    width: 65%;
+    width: 55%;
 }
 
 .about .row .box:nth-child(1) .progress:nth-child(5) .bar span{
