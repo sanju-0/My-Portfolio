@@ -210,6 +210,64 @@ section{
     font-size: 2rem;
 }
 
+.emoji {
+    font-size: calc(12px + 4vw);
+    min-width: 1.4em;
+    margin: 0.3em 0.4em;
+    text-align: center;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.hearts::after {
+    content: '💗';
+    animation-name: hearts;
+    animation-duration: 3s;
+}
+
+@keyframes hearts {
+    16.666% {
+        content: '🧡';
+    }
+
+    33.333% {
+        content: '💛';
+    }
+
+    50% {
+        content: '💚';
+    }
+
+    66.666% {
+        content: '💙';
+    }
+
+    83.333% {
+        content: '💜';
+    }
+}
+
+.monkey::after {
+    content: '🙈';
+    --emoji-1: '🙉';
+    --emoji-2: '🙊';
+    animation-name: threeFrames;
+    animation-duration: 2s;
+}
+
+@keyframes threeFrames {
+    33.333% {
+        content: var(--emoji-1);
+    }
+
+    66.666% {
+        content: var(--emoji-2);
+    }
+}
+
 .about .row{
     display: flex;
     align-items: center;
@@ -329,6 +387,19 @@ section{
     margin:1rem;
 }
 
+.bomb::after {
+    content: '💣';
+    --emoji: '💥';
+    animation-name: twoFrames;
+    animation-duration: 2s;
+}
+
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
+
 .portfolio .button-container{
     display: flex;
     align-items: center;
@@ -389,6 +460,13 @@ section{
 .portfolio .image-container .box .info a{
     font-size: 2.5rem;
     color:var(--primary-text-color);
+}
+
+.mailbox::after {
+    content: '📥';
+    --emoji: '📤';
+    animation-name: twoFrames;
+    animation-duration: 1s;
 }
 
 .contact .row{
@@ -494,12 +572,19 @@ section{
 }
 
 .footer{
-    padding:2.5rem 1rem;
+    padding: 0.7rem 0rem;
     text-align: center;
     font-size: 2rem;
     color:var(--primary-text-color);
     background: var(--primary-bg-color);
     margin-top: 1rem;
+}
+
+.camera::after {
+    content: '📷';
+    --emoji: '📸';
+    animation-name: twoFrames;
+    animation-duration: 1.2s;
 }
 
 .footer span{
