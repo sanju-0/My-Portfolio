@@ -1,5 +1,5 @@
 :root{
-    --main-color:#fc9dec;
+    --main-color:#66bcfd;
     --primary-bg-color:#fff;
     --secondary-bg-color:#eee;
     --primary-text-color:#222;
@@ -41,7 +41,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:var(--secondary-bg-color);
+    /*background:var(--secondary-bg-color); */
+    background-image: linear-gradient(to right, rgb(254, 254, 184), rgb(251, 176, 240) , rgb(254, 254, 184));
 }
 
 body.dark-theme{
@@ -163,9 +164,10 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background-image: linear-gradient(to right, rgb(254, 254, 184), rgb(251, 176, 240) , rgb(254, 254, 184));
 }
 
-.home .image{
+/*.home .image{
     flex:1 1 40rem;
     padding:1rem;
     text-align: center;
@@ -179,7 +181,7 @@ section{
     border-bottom: 3rem solid var(--main-color);
     border-left: 3rem solid var(--main-color);
     border-radius: .5rem;
-}
+}*/
 
 .home .content{
     flex:1 1 40rem;
